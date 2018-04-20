@@ -8,8 +8,10 @@ Collection of python lambda function
 conda create --name aws-python-lambdas python=3.6.2
 # activate env
 source activate aws-python-lambdas
+pip install --upgrade pip
 pip install boto3
-pip install pytest
+pip install --upgrade awscli
+#pip install pytest
 # install libs from the requirements of each single lambda
 for i in src/*/; do pip install -r $i"requirements.txt"; done
 </pre>
